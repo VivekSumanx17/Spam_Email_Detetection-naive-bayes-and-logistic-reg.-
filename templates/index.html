@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Detection</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="domain">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Email Spam Detection Logo" class="hero-img">
+                <h1 class="brand-title">Email Spam Detection</h1>
+
+            </div>
+        </div>
+    </header>
+    <div class="input">
+        <h2>Email Spam Detection</h2>
+        <form action="/spam" method="post">
+            <label class="enter" for="check">Enter email content</label>
+            <textarea id="check" name="content" placeholder="Enter email text here" required></textarea>
+
+            <button class="reult" type="submit" onclick="">Check</button>
+        </form>
+        {% if result %}
+            <div class="{% if result.startswith('🚨') %}spam{% else %}not-spam{% endif %}">
+                <b>{{ result }}</b>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
