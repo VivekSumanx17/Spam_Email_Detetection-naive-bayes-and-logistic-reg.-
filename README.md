@@ -1,9 +1,9 @@
-Spam Email Detection Web Application:-
+# Spam Email Detection Web Application:-
 
     This project is a machine learning–based spam email detection system with a Flask web interface.
     It allows users to enter email or message text and instantly check whether it is Spam or Not Spam.
 
-Project Overview:-
+# Project Overview:-
 
     The system uses Natural Language Processing (NLP) techniques and Machine Learning models to    classify messages.
   
@@ -12,7 +12,7 @@ Project Overview:-
         Naive Bayes Classifier
         Logistic Regression
 
-The trained models are integrated into a Flask web app for real-time prediction.
+# The trained models are integrated into a Flask web app for real-time prediction.
 
     Project Structure
     ├── app.py                     # Flask app using Naive Bayes model
@@ -30,7 +30,7 @@ The trained models are integrated into a Flask web app for real-time prediction.
     │   └── index.html             # Web interface
     └── README.md
 
-Dataset Description:-
+# Dataset Description:-
 
     Dataset name: spam_ham_dataset.csv
   
@@ -47,7 +47,7 @@ Dataset Description:-
         label	Message category (spam / ham)
         text	Message content
     
-How It Works:-
+# How It Works:-
 
     Dataset is loaded and cleaned
   
@@ -65,14 +65,14 @@ How It Works:-
   
     Flask app loads the model and predicts user input in real time
 
-Web Application Features:-
+# Web Application Features:-
 
     Clean and responsive UI
     Text input for message/email
     Instant spam prediction
     Visual result indicators
   
-Technologies Used:-
+# Technologies Used:-
 
     Python
     Flask
@@ -82,7 +82,7 @@ Technologies Used:-
     HTML / CSS
     Pickle
 
-Use Cases
+# Use Cases
 
     Email spam filtering
     SMS spam detection
